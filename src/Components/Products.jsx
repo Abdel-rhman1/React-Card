@@ -11,8 +11,9 @@ function Products() {
         if (!initialProducts.current) {
             initialProducts.current = true;
             fetchProducts();
+            
             setLoading(false);
-        }
+        } 
     }, []);
 
     const fetchProducts = async () => {
