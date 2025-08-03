@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { use } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import useContext from 'react';
+import { createContext  } from 'react';  
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// export const CardContext = createContext(0);const CardContextV = [0];
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <CardContext.Provider value={{CardContextV}}> */}
+      <App />
+    {/* </CardContext.Provider> */}
+
   </React.StrictMode>
 );
 
